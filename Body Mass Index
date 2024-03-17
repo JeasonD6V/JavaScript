@@ -1,0 +1,27 @@
+console.clear();
+
+let weight = Number(prompt("Enter your weight in kilograms"));
+
+let height = Number(prompt("Enter your height in meters"));
+
+let result = weight / (height * 2);
+
+if (result <= 18.5) {
+      alert("Below ideal weight");
+}
+
+else if (result >= 18.5 && result <= 24.9) {
+      alert("Ideal weight");
+}
+
+else if (result >= 25 && result <= 29.9) {
+      alert("Above ideal weight");
+}
+
+else if (result >= 30 && result <= 39.9) {
+      alert("Far above ideal weight (obese)");
+}
+
+else if (result >= 40) {
+      alert("Far above ideal weight (morbidly obese)");
+}
